@@ -20,7 +20,7 @@ export default function Navbar({ user }) {
           setIsSidebarOpen={setIsSidebarOpen}
         />
       )}
-      <nav className="w-full gap-2 p-5 fixed top-0 right-1  flex justify-between items-center font-semibold bg-[#121212]">
+      <nav className="w-full gap-2  fixed top-0   flex justify-between items-center font-semibold bg-[#121212]">
         <div
           onClick={() => {
             setIsSidebarOpen(true);
@@ -137,7 +137,7 @@ export default function Navbar({ user }) {
           </div>
         </div>
       </nav>
-      <div className="flex items-center gap-2 mt-4">
+      <div className="flex items-center gap-2 mt-8">
         <p className="bg-white text-black px-4 py-1 rounded-2xl cursor-pointer">
           All
         </p>
