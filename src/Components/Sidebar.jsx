@@ -19,7 +19,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
       <div
         className={
           isSidebarOpen
-            ? "absolute z-50 left-1 top-1 w-[25%] h-[90%] border-amber-50 p-2 flex-col gap-2 text-white block "
+            ? "absolute z-500 left-1 top-1 w-[50%] h-[90%] border-amber-50 p-2 flex-col gap-2 text-white block "
             : "w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex"
         }
       >
