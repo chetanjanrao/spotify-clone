@@ -38,7 +38,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
             onClick={() => {
               setIsSidebarOpen(false);
             }}
-            className="absolute top-4 right-2 text-4xl text-white transition-all duration-300 ease-in-out hover:cursor-pointer hover:rotate-90 hover:scale-125 hover:text-red-400"
+            className="absolute top-4 right-2 mr-3 text-4xl text-white transition-all duration-300 ease-in-out hover:cursor-pointer hover:rotate-90 hover:scale-125 hover:text-red-400"
           >
             &times;
           </button>}

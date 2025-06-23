@@ -20,7 +20,7 @@ export default function Navbar({ user }) {
           setIsSidebarOpen={setIsSidebarOpen}
         />
       )}
-      <nav className="w-full gap-2 flex justify-between items-center font-semibold">
+      <nav className="w-full gap-2 fixed top-0  flex justify-between items-center font-semibold">
         <div
           onClick={() => {
             setIsSidebarOpen(true);

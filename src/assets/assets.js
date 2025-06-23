@@ -13,6 +13,7 @@ import search_icon from "./search.png";
 import shuffle_icon from "./shuffle.png";
 import speaker_icon from "./speaker.png";
 import stack_icon from "./stack.png";
+import music_player_ring from "./music_player_ring.png";
 import zoom_icon from "./zoom.png";
 import plus_icon from "./plus.png";
 import arrow_icon from "./arrow.png";
@@ -39,6 +40,7 @@ import img13 from "./img13.jpg";
 import img14 from "./img14.jpg";
 import img15 from "./img15.jpg";
 import img16 from "./img16.jpg";
+
 // import song1 from  './song1.mp3'
 // import song2 from  './song2.mp3'
 // import song3 from  './song3.mp3'
@@ -69,6 +71,7 @@ export const assets = {
   arrow_right,
   spotify_logo,
   clock_icon,
+  music_player_ring
 };
 
 export const albumsData = [
