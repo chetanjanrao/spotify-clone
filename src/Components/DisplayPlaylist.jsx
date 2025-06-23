@@ -52,7 +52,7 @@ export default function DisplayPlaylist({ user }) {
   return (
     <div>
       <Navbar user={user} />
-      <div className="mt-10 flex gap-8 flex-col md:flex-row md:items-end bg-gradient-to-t from-gray-500 via-slate-400 to-slate-900bg-gradient-to-br from-green-400 via-blue-400 to-black">
+      <div className="mt-10 flex gap-8 flex-col md:flex-row md:items-end">
         {/* <img
           src="/path/to/image.jpg"
           alt="Background"

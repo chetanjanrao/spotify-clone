@@ -33,7 +33,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
             <img src={assets.home_icon} className="w-6" alt="Logo" />
             <p className="font-bold">Home</p>
           </div>
-          <button
+          {isSidebarOpen && <button
             id="closeButton"
             onClick={() => {
               setIsSidebarOpen(false);
@@ -41,7 +41,7 @@ export default function Sidebar({ isSidebarOpen, setIsSidebarOpen }) {
             className="absolute top-4 right-2 text-4xl text-white transition-all duration-300 ease-in-out hover:cursor-pointer hover:rotate-90 hover:scale-125 hover:text-red-400"
           >
             &times;
-          </button>
+          </button>}
           <div
             className="flex items-center gap-3 pl-8 cursor-pointer"
             onClick={() => {

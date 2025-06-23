@@ -60,11 +60,11 @@ export default function Player() {
   return (
     <div className="h-[10%] bg-black flex justify-between items-center text-white px-4">
       <div className="hidden lg:flex  items-center gap-4">
-        <img className="w-12" src="#" alt="logo" />
+        {/* <img className="w-12" src="#" alt="logo" />
         <div>
           <p>{12}</p>
           <p>{45}</p>
-        </div>
+        </div> */}
       </div>
       <div className="flex flex-col  items-center gap-1 m-auto">
         <div className="flex gap-4">
