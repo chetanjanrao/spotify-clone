@@ -67,7 +67,7 @@ export default function SearchSongs({ user }) {
       <Navbar user={user} />
       {/* <h3 className="mt-8 mr-5">Welcome to Search songs</h3>
       <h2>you are searching for :{searchQuery}</h2> */}
-      <hr />
+      
       <div className="grid grid-cols-3 sm:grid-cols-4 mt-10 mb-4 pl-2 text-[#a7a7a7]">
         <p>
           <b className="mr-4">#</b> {"  "}Title
@@ -76,6 +76,7 @@ export default function SearchSongs({ user }) {
         <p className="hidden sm:block">Album Name</p>
         <img className="m-auto w-4" src={assets.clock_icon} alt="" />
       </div>
+      <hr/>
       {searchTracks?.tracks?.items?.map((obj, index) => (
         <div
           key={index}

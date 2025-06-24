@@ -13,7 +13,8 @@ import SearchSongs from "./SearchSongs";
 
 export default function Display({ spotify }) {
   const [{ user }, dispatch] = useDataLayerValue();
-  //   const displayRef = React.createRef();
+
+    const displayRef = React.createRef();
   //   const location = useLocation();
 
   //   const isAlbum = location.pathname.includes("/album");
@@ -27,8 +28,18 @@ export default function Display({ spotify }) {
   //       displayRef.current.style.background = `#121212`;
   //     }
   //   });
+    function colorGenearator() {
+        let color = (Math.floor(Math.random() * 1000000)).toString(16)
+        displayRef.current.style.background = `linear-gradient(#${color},#121212)`
+    }
+    useEffect(() => {
+        setInterval(() => {
+            colorGenearator()
+        }, 300000)
+
+    }, [])
   return (
-    <div className="w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml=0 ">
+    <div ref={displayRef} className="w-[100%] m-2 px-6 pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml=0 ">
       {/* <div class="relative h-64 w-full bg-gray-100"> */}
 
       {/* <div class="absolute top-0 bottom-0 h-full w-[30%] bg-gradient-to-b from-purple-600 to-transparent-10"></div> */}
