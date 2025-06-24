@@ -20,7 +20,7 @@ export default function Navbar({ user }) {
           setIsSidebarOpen={setIsSidebarOpen}
         />
       )}
-      <nav className="w-full sticky bg-[#121212] pt-2 pl-3 pr-3 pb-2 top-0 z-100 gap-2 flex justify-between items-center font-semibold">
+      <nav className="w-full sticky bg-[#121212] pt-5 pl-3 pr-3 pb-2 top-0 z-100 gap-2 flex justify-between items-center font-semibold">
         <div
           onClick={() => {
             setIsSidebarOpen(true);
