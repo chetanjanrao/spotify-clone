@@ -31,16 +31,16 @@ export default function Display({ spotify }) {
     function colorGenearator() {
         let color = (Math.floor(Math.random() * 1000000)).toString(16)
         displayRef.current.style.background = `linear-gradient(#${color},#121212)`
-        console.log(color)
+        // console.log(color)
     }
     useEffect(() => {
         setInterval(() => {
             colorGenearator()
-        }, 3000)
+        }, 150000)
 
     }, [])
   return (
-    <div ref={displayRef} className="w-[100%] m-2 pl-6 pr-6 pb-6  pt-4 rounded bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml=0 ">
+    <div ref={displayRef} className="w-[100%] m-2 pl-6 pr-6 pb-6  pt-4 rounded-2xl bg-[#121212] text-white overflow-auto lg:w-[75%] lg:ml=0 ">
       {/* <div class="relative h-64 w-full bg-gray-100"> */}
 
       {/* <div class="absolute top-0 bottom-0 h-full w-[30%] bg-gradient-to-b from-purple-600 to-transparent-10"></div> */}
