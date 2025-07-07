@@ -144,9 +144,10 @@
  import HomePage from "./Components/HomePage";
  import SpotifyWebApi from "spotify-web-api-js";
  import { useDataLayerValue } from "./Components/DataLayer";
- const spotify = new SpotifyWebApi();
+ 
+ import "./styles.css";
 export default function App() {
-  
+  const spotify = new SpotifyWebApi();
   const [{ user, token }, dispatch] = useDataLayerValue();
   
 
