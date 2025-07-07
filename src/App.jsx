@@ -120,18 +120,7 @@ export default function App() {
           console.error(err);
         }
       );
-      // spotify.searchTracks("Love").then(
-      //   function (data) {
-      //     console.log('Search by "Love"', data);
-      //     dispatch({
-      //       type: "SET_SEARCH_SONG",
-      //       searchSongs: data,
-      //     });
-      //   },
-      //   function (err) {
-      //     console.error(err);
-      //   }
-      // );
+  
 
       spotify
         .getAlbums(["2hazSY4Ef3aB9ATXW7F5w3", "6J6yx1t3nwIDyPXk5xa7O8"])

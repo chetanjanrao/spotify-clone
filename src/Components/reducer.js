@@ -1,10 +1,10 @@
 export const initialState = {
   user: null,
   playlists: [],
-  //token:
-  //  / "BQBrKHTv_zYJN_kboQ1OVMvvUZiLPR4VqYvGNzHd8Nz24gD8Z_LKvwo3pnoCJawnfQ_v67JcyB-ZFa6nUN6uIg1pRByCMwTagqlYeD2y7ntvCLXc4UOqtDtLezY1PoHA9brAG9DRG-7guW7WTTH3TOGjNfvroH9yxNvXdEn5FNvIllr6enl3lXSMoAjo7CYiAp9DVlRqOmmTs3FYhb9przat5fsDoiwW7UIqULwDP7WYodlJHZVP0C55NjK2",
+  token:
+  "BQBrKHTv_zYJN_kboQ1OVMvvUZiLPR4VqYvGNzHd8Nz24gD8Z_LKvwo3pnoCJawnfQ_v67JcyB-ZFa6nUN6uIg1pRByCMwTagqlYeD2y7ntvCLXc4UOqtDtLezY1PoHA9brAG9DRG-7guW7WTTH3TOGjNfvroH9yxNvXdEn5FNvIllr6enl3lXSMoAjo7CYiAp9DVlRqOmmTs3FYhb9przat5fsDoiwW7UIqULwDP7WYodlJHZVP0C55NjK2",
   playing: false,
-  token: null,
+  // token: null,
   albums: [],
   items: null,
   albumAndAlbumTracks: [],

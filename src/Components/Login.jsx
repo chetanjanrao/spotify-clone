@@ -2,9 +2,7 @@ import React from "react";
 import SpotifyLogo from "../assets/SpotifyLogo.png";
 // import { getSpotifyAuthUrl } from "../assets/Spotify/SpotifyAuth";
 import { loginUrl } from "../assets/Spotify/Spotify";
-// import FooterPlayer from "./FooterPlayer";
-// import CallbackHandler from "./CallbackHandler";
-// import { Routes, Route } from "react-router-dom";
+
 
 export default function Login() {
   console.log("Login component rendered", loginUrl);
