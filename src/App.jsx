@@ -135,6 +135,16 @@
 //   return <>{token ? <HomePage spotify={spotify} /> : <Login />}</>;
 // }
 //}
+
+
+
+ import React, { useState, useEffect } from "react";
+ import Login from "./Components/Login";
+ import { getTokenFromUrl } from "./assets/Spotify/Spotify";
+ import HomePage from "./Components/HomePage";
+ import SpotifyWebApi from "spotify-web-api-js";
+ import { useDataLayerValue } from "./Components/DataLayer";
+ const spotify = new SpotifyWebApi();
 export default function App() {
   
   const [{ user, token }, dispatch] = useDataLayerValue();
