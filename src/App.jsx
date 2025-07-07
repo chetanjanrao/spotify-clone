@@ -18,8 +18,9 @@ export default function App() {
   useEffect(() => {
     const hash = getTokenFromUrl();
     window.location.hash = "";
-    const _token = hash.access_token;
-    // console.log(_token);
+    // const _token = hash.access_token;
+    let _token = localStorage.getItem("spotify_token");
+     console.log(_token);
     if (_token) {
       localStorage.setItem("spotify_token", _token);
       dispatch({
