@@ -3,7 +3,7 @@ export const authEndPoint = "https://accounts.spotify.com/authorize";
 // const redirectUri = "https://tmzn3p-5173.csb.app/";
 const redirectUri = "https://spotifystream.vercel.app/"
 const clentId = "5b82a28ff387492cac57e5a9a982b84d";
-const response_type = "token";
+const response_type = "code";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
