@@ -10,11 +10,10 @@ import "./styles.css";
   /*start from here*/
 }
 export default function App() {
-  // const [token, setToken] = useState(null);
-  // const [albumData, setAlbumData] = useState(null);
+  
   const albumId = "5mS4yO0p42yLgXzK1b1K1D";
   const [{ user, token }, dispatch] = useDataLayerValue();
-  //const [{ token }, dispatch] = useDataLayerValue();
+  
 
   useEffect(() => {
     const hash = getTokenFromUrl();
@@ -22,6 +21,7 @@ export default function App() {
     const _token = hash.access_token;
     // console.log(_token);
     if (_token) {
+      localStorage.setItem("spotify_token", _token);
       dispatch({
         type: "SET_TOKEN",
         token: _token,
