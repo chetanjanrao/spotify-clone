@@ -3,8 +3,9 @@ export const initialState = {
   playlists: [],
   //token:
   //"BQBrKHTv_zYJN_kboQ1OVMvvUZiLPR4VqYvGNzHd8Nz24gD8Z_LKvwo3pnoCJawnfQ_v67JcyB-ZFa6nUN6uIg1pRByCMwTagqlYeD2y7ntvCLXc4UOqtDtLezY1PoHA9brAG9DRG-7guW7WTTH3TOGjNfvroH9yxNvXdEn5FNvIllr6enl3lXSMoAjo7CYiAp9DVlRqOmmTs3FYhb9przat5fsDoiwW7UIqULwDP7WYodlJHZVP0C55NjK2",
+  token : "AQAj9fsKFRTfA_9Yff3bYmRqpdyqkRqJOVIhjumx22pWjzibM8CmEpafjB9bOyKRWj51EOuP4j5KEHfzjT_V_fV88sOMpYotzhA_-TJ802tLQcU-Z6dxsOsEfMIkkdyMcP4kMk-nuOENz1-ajS-Rnp5A3kMdk19GYsDRyEGfxWLvHPA7CEVmSEBmJU7EddB1mcVEYxn21l9ywH4poMr_AhXWzDlpobDyBMgLGroswimc_slPYIiALkX9B3bUvFkWxYwD_xGqXxw6o2Ta7MlQiPQc-ahPdAW5IXJsBPxn78i5pOJSgbFHhao819zndr7sXjNyp99Qq1Iiz_5auVgw9smRCFaDNi4ULcSxn3FJdYF7vhdGKzu3FXDdcSo5fQA_NBooT3ujT5ZBrZGstOULtj4hAnnHHA",
   playing: false,
-   token: null,
+  //  token: null,
   albums: [],
   items: null,
   albumAndAlbumTracks: [],
