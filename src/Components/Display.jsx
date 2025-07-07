@@ -10,7 +10,7 @@ import DisplayAlbum from "./DisplayAlbum";
 import DisplayPlaylist from "./DisplayPlaylist";
 import { useDataLayerValue } from "./DataLayer";
 import SearchSongs from "./SearchSongs";
-import CallbackHandler from "./CallbackHandler";
+
 
 export default function Display({ spotify }) {
   const [{ user }, dispatch] = useDataLayerValue();
@@ -52,7 +52,7 @@ export default function Display({ spotify }) {
         <Route path="/searchsongs" element={<SearchSongs user={user} />} />
         <Route path="/playlist" element={<DisplayPlaylist user={user} />} />
         <Route path="/albumtracks" element={<AlbumTracks user={user} />} />
-         <Route path="/callback" element={<CallbackHandler />} />
+        
       </Routes>
     </div>
   );

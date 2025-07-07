@@ -1,7 +1,8 @@
 export const authEndPoint = "https://accounts.spotify.com/authorize";
 // export const redirectUri = "http://localhost:3000/";
 // const redirectUri = "https://tmzn3p-5173.csb.app/";
-const redirectUri = "https://spotifystream.vercel.app/"
+//const redirectUri = "https://spotifystream.vercel.app/"
+const redirectUri = "https://lazy-signs-drop.loca.lt/";
 const clentId = "5b82a28ff387492cac57e5a9a982b84d";
 const response_type = "code";
 const scopes = [
@@ -27,3 +28,4 @@ export const getTokenFromUrl = () => {
 export const loginUrl = `${authEndPoint}?client_id=${clentId}&response_type=${response_type}&redirect_uri=${redirectUri}&scope=${scopes.join(
   "%20"
 )}&response_type=token&show_dialog=true`;
+console.log(loginUrl);
