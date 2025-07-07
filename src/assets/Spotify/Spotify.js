@@ -4,7 +4,7 @@ export const authEndPoint = "https://accounts.spotify.com/authorize";
 //const redirectUri = "https://spotifystream.vercel.app/"
 const redirectUri = "https://lazy-signs-drop.loca.lt/";
 const clentId = "5b82a28ff387492cac57e5a9a982b84d";
-const response_type = "code";
+const response_type = "token";
 const scopes = [
   "user-read-currently-playing",
   "user-read-recently-played",
