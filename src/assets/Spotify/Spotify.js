@@ -25,7 +25,7 @@ export const getTokenFromUrl = () => {
       return initial;
     }, {});
 };
-export const loginUrl = `${authEndPoint}?client_id=${clentId}&redirect_uri=${redirectUri}&scope=${scopes.join(
-  "%20"
-)}&response_type=token&show_dialog=true`;
+export const loginUrl = `${authEndPoint}?client_id=${clentId}&redirect_uri=${encodeURIComponent(
+  redirectUri
+)}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`;
 
