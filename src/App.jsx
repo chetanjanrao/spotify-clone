@@ -9,9 +9,13 @@
  export default function App() {
    const albumId = "5mS4yO0p42yLgXzK1b1K1D";
    const [{ user, token }, dispatch] = useDataLayerValue();  
+    console.log("User", user);
+    console.log("Token", token);
    useEffect(() => {
      const hash = getTokenFromUrl();
+     console.log("Hash", hash);
      window.location.hash = "";
+
       const _token = hash.access_token;
       console.log(_token);
      if (_token) {
@@ -119,5 +123,5 @@
        console.log(token);
      }
    }, [token]);
-   return <>{token ? <HomePage spotify={spotify} /> : <Login />}</>;
+   return <>{!token ? <HomePage spotify={spotify} /> : <Login />}</>;
  }
