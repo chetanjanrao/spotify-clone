@@ -6,7 +6,7 @@ export default function Login() {
   const handleLogin = async () => {
     const loginUrl = await generateSpotifyLoginUrl();
     window.location.href = loginUrl;
-  };
+  }
   return (
     <div className="h-full w-full bg-black flex justify-center flex-col items-center pb-3 space-y-5">
       <img src={SpotifyLogo} alt="spotify-logo" />

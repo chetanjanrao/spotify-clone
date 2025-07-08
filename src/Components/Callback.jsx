@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 const clientId = "5b82a28ff387492cac57e5a9a982b84d";
-const redirectUri = "https://spotifystream.vercel.app/"; // must match Spotify app settings
+const redirectUri = "https://spotify-clone-git-chetan-dev-jrchetan1997-7932s-projects.vercel.app/"; // must match Spotify app settings
 
 export default function Callback() {
   useEffect(() => {
