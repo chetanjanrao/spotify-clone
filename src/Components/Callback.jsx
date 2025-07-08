@@ -36,7 +36,7 @@ export default function Callback() {
           console.log("✅ Token stored:", data.access_token);
 
           // Redirect to app home or dashboard
-          window.location.href = "/";
+          window.location.href = "/callback";
         } else {
           console.error("❌ Token error:", data);
         }
