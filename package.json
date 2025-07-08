@@ -21,12 +21,16 @@
     "@types/react-dom": "19.0.0",
     "typescript": "5.7.2",
     "vite": "^5.4.19",
+    "vite-plugin-gh-pages": "^1.0.1",
     "vite-plugin-mkcert": "^1.17.8"
   },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+  "deploy": "vite gh-pages"
+   
+ 
   },
   "browserslist": [
     ">0.2%",
