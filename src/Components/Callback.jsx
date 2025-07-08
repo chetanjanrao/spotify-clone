@@ -4,10 +4,9 @@ const clientId = "5b82a28ff387492cac57e5a9a982b84d";
 const redirectUri = "https://spotify-clone-git-chetan-dev-jrchetan1997-7932s-projects.vercel.app/"; // must match Spotify app settings
 
 export default function Callback() {
-  useEffect(() => {
-    const fetchToken = async () => {
+  const fetchToken = async () => {
       const urlParams = new URLSearchParams(window.location.search);
-      const code = urlParams.get("code");
+      const code =  urlParams.get("code");
       const codeVerifier = localStorage.getItem("code_verifier");
       
       if (!code || !codeVerifier) {
@@ -44,10 +43,10 @@ export default function Callback() {
       } catch (err) {
         console.error("❌ Fetch error:", err);
       }
-    };
-
-    fetchToken();
-  }, []);
+    }
+    useEffect(() => {
+      fetchToken();
+    }, []);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-black text-white">
