@@ -44,6 +44,6 @@ export async function generateSpotifyLoginUrl() {
     code_challenge_method: "S256",
     code_challenge: codeChallenge,
   });
-
+  console.log(`https://accounts.spotify.com/authorize?${params.toString()}`);
   return `https://accounts.spotify.com/authorize?${params.toString()}`;
 }
