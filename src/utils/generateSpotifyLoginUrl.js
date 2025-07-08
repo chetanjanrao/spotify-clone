@@ -1,6 +1,6 @@
 export async function generateSpotifyLoginUrl() {
   const clientId = "5b82a28ff387492cac57e5a9a982b84d";
-  const redirectUri = "https://spotify-clone-git-chetan-dev-jrchetan1997-7932s-projects.vercel.app/callback"; // your deployed frontend
+  const redirectUri = "https://spotify-clone-git-chetan-dev-jrchetan1997-7932s-projects.vercel.app/"; // your deployed frontend
   const scopes = [
     "user-read-currently-playing",
     "user-read-recently-played",
