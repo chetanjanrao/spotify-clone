@@ -1,23 +1,22 @@
  import React, { useEffect } from "react";
  import Login from "./Components/Login";
- import { getTokenFromUrl } from "./assets/Spotify/Spotify";
  import HomePage from "./Components/HomePage";
  import SpotifyWebApi from "spotify-web-api-js";
  import { useDataLayerValue } from "./Components/DataLayer";
  const spotify = new SpotifyWebApi();
+ import  Spotify  from "./assets/Spotify/Spotify";
  import "./styles.css";
  export default function App() {
    const albumId = "5mS4yO0p42yLgXzK1b1K1D";
    const [{ user, token }, dispatch] = useDataLayerValue();  
     console.log("User", user);
     console.log("Token", token);
+     const handleLogin = async () => {
+    const loginUrl = await Spotify();
+    window.location.href = loginUrl;
+  };
    useEffect(() => {
-     const hash = getTokenFromUrl();
-     console.log("Hash", hash);
-     window.location.hash = "";
-
-      const _token = hash.access_token;
-      console.log(_token);
+    
      if (_token) {
        dispatch({
          type: "SET_TOKEN",
@@ -123,5 +122,5 @@
        console.log(token);
      }
    }, [token]);
-   return <>{!token ? <HomePage spotify={spotify} /> : <Login />}</>;
+   return <>{!token ? <HomePage spotify={spotify} /> : <Login handleLogin={handleLogin}/>}</>;
  }
