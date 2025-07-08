@@ -128,18 +128,21 @@
 import React from "react";
 import Login from "./Components/Login";
 import Callback from "./Components/Callback";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route ,Navigate} from "react-router-dom";
 
 function App() {
   const path = window.location.pathname;
 
   // if (path === "/callback") return <Callback />;
   // return <Login />;
-
-  <Routes>
-    <Route path="/" element={<Login />} />
-    <Route path="/callback" element={<Callback />} />
-  </Routes>
+   const token = localStorage.getItem("spotify_token");
+  return(
+    <Routes>       
+       <Route path="/" element={token ? <Navigate to="/callback" /> : <Login />} />
+         <Route path="/callback" element={<Callback />} />
+    </Routes>
+  )
+  
 }
 
 export default App;
