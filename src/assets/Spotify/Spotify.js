@@ -1,4 +1,4 @@
-export async function Spotify(): Promise<string> {
+export async function Spotify() {
   const clientId = '5b82a28ff387492cac57e5a9a982b84d';
   const redirectUri =
     'https://spotifystream.vercel.app/';
@@ -13,7 +13,7 @@ export async function Spotify(): Promise<string> {
   ];
 
   // Generate a random string
-  const generateRandomString = (length: number) => {
+  const generateRandomString = (length) => {
     const possible =
       'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     const values = crypto.getRandomValues(new Uint8Array(length));
@@ -21,14 +21,14 @@ export async function Spotify(): Promise<string> {
   };
 
   // Hash the verifier
-  const sha256 = async (plain: string) => {
+  const sha256 = async (plain) => {
     const encoder = new TextEncoder();
     const data = encoder.encode(plain);
     return await crypto.subtle.digest('SHA-256', data);
   };
 
   // Base64URL encode
-  const base64encode = (input: ArrayBuffer): string => {
+  const base64encode = (input) => {
     return btoa(String.fromCharCode(...new Uint8Array(input)))
       .replace(/=/g, '')
       .replace(/\+/g, '-')
