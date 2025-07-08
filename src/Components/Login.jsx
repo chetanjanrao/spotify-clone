@@ -5,6 +5,7 @@ import { generateSpotifyLoginUrl } from "../utils/generateSpotifyLoginUrl";
 export default function Login() {
   const handleLogin = async () => {
     const loginUrl = await generateSpotifyLoginUrl();
+    console.log("🔗 Redirecting to Spotify login:", loginUrl);
     window.location.href = loginUrl;
   }
   return (
