@@ -1,9 +1,10 @@
 import React, { useEffect } from "react";
-
+import { useNavigate } from "react-router-dom";
 const clientId = "5b82a28ff387492cac57e5a9a982b84d";
 const redirectUri = "https://spotify-clone-git-chetan-dev-jrchetan1997-7932s-projects.vercel.app/"; // must match Spotify app settings
 
 export default function Callback() {
+    const navigate = useNavigate();
   const fetchToken = async () => {
       const urlParams = new URLSearchParams(window.location.search);
       const code =  urlParams.get("code");
@@ -36,7 +37,7 @@ export default function Callback() {
           console.log("✅ Token stored:", data.access_token);
 
           // Redirect to app home or dashboard
-          window.location.href = "/callback";
+          navigate("/callback"); // Adjust the path as needed
         } else {
           console.error("❌ Token error:", data);
         }

@@ -128,12 +128,18 @@
 import React from "react";
 import Login from "./Components/Login";
 import Callback from "./Components/Callback";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   const path = window.location.pathname;
 
-  if (path === "/callback") return <Callback />;
-  return <Login />;
+  // if (path === "/callback") return <Callback />;
+  // return <Login />;
+
+  <Routes>
+    <Route path="/" element={<Login />} />
+    <Route path="/callback" element={<Callback />} />
+  </Routes>
 }
 
 export default App;
