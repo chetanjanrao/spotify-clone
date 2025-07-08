@@ -1,4 +1,5 @@
 import React from "react";
+import SpotifyLogo from "../assets/SpotifyLogo.png";
 import { generateSpotifyLoginUrl } from "../utils/generateSpotifyLoginUrl";
 
 export default function Login() {
