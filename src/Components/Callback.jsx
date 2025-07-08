@@ -9,7 +9,7 @@ export default function Callback() {
       const urlParams = new URLSearchParams(window.location.search);
       const code = urlParams.get("code");
       const codeVerifier = localStorage.getItem("code_verifier");
-
+      
       if (!code || !codeVerifier) {
         console.error("Missing code or code_verifier");
         return;
@@ -29,7 +29,7 @@ export default function Callback() {
             code_verifier: codeVerifier,
           }),
         });
-
+        console.log("🔄 Fetching token...");
         const data = await response.json();
 
         if (data.access_token) {
